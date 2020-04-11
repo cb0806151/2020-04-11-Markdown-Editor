@@ -41,7 +41,7 @@ export class AppComponent implements OnInit {
   }
 
   copyMarkdownToClipboard() {
-    navigator.clipboard.writeText(this.textToBeMarkedDown)
+    window.navigator['clipboard'].writeText(this.textToBeMarkedDown)
   }
 
   toggleTheme() {
