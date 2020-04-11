@@ -1,84 +1,82 @@
-# Today's Objective: Interactive Calculator
+# Today's Objective: Markdown Editor
 
 ## Prize
 
 $25 CAD Amazon gift card + bragging rights.
 
-Tip: Read the [General Information Document]("./General\ Information.md") for more info on how to get started and submit.
+Tip: Read the [General Information Document](General%20Information.md) for more info on how to get started and submit.
 
 ## Objective
 
-Interactive calculators are a beautiful way to inform, entertain, and educate people. Some of them are very beautiful, featuring graphs, charts, and animations. Many of them are simple, practical, and pragmatic. They find uses in marketing, engineering, finance, medicine -- pretty much every field. At some point in their careers, most developers have been involved in a calculator project or two.
+Today's objective is to create your own Markdown Editor.
 
-Here are some examples of interesting interactive calculators. Notice that they all vary in feature sets, functionality, objective, and scope. Some of them focus on beauty and aesthetics, while others focus on practicality and simplicity.
+Markdown, as you probably already know, is a formatting language for text-based documents. This document is written in Markdown. You can see its source to get a taste for what Markdown looks like.
 
-* https://goodcalculators.com/meat-cooking-time-calculator/
-* https://www.bills.com/debt/tools/ways-to-save
-* https://paulhoughton.github.io/mortgage/
-* http://www.diablo3gemcalculator.com/
-* https://calculator.numerologist.com/
+Some examples of Markdown Editors include:
 
-Today's objective is to create a simple interactive calculator of your own design.
+* [StackEdit](https://stackedit.io/) (simple web-based)
+* [Dillinger](https://dillinger.io/) (simple web-based)
+* [Typora](https://typora.io/) (installed, with advanced features)
+* [hackmd](https://hackmd.io/) (this is a lot more than just a simple markdown editor)
 
 ## Requirements
 
-Create an interactive calculator! 
+Create a Markdown editor, like the above, that has the following components:
 
-The design can be of your own choosing, and so this project is very open-ended. Here are some suggestions:
+* Input area
+* Compilation logic (you can use a library for this)
+* Preview panel (no need to do live preview, using a submit button is fine)
 
-`Tip: Make sure you choose an EASY problem! You only have 2h15m to finish while also writing clean code.`
+Also, you should try to have a good stylesheet for the output HTML (you can use something like Bootstrap, Bulma, etc.)
 
-### Suggested project: Tip calculator
+### Bonus points
 
-Take a restaurant bill and calculate how much tip you have to add on top of it. Easy peasy!
+You get bonus points for any features other than the above that you can successfully demo. 
 
-Inputs: bill amount, tip percentage
-Outputs: tip amount, grand total
+For example:
 
-### Suggested project: Bill split calculator
+* Live preview (where your edits in the input area automatically show up in the preview panel)
+* Syntax highlighting for input area
+* Selectable themes for input area
+* Selectable themes for preview panel
+* Print to PDF
+* Locally installed (using Electron, for example)
+* Responsive design 
 
-Take a restaurant bill and split it between a number of parties. 
+That's it!
 
-Inputs: bill amount, number of parties.
-Outputs: amount of money each party has to pay
+The most interesting, useful, and cool designs will have a chance of winning -- and they must be written well, too. So, get creative :-)
 
-To make it more fun, you can maybe create some kind of way to assign greater or lower ratios of the bill to different parties.
+## How to build a simple markdown editor
 
-### Suggested project: Compound growth calculator
+Building a markdown editor is remarkably simple. You can use libraries for a lot of the functionality, and stitch them together using JavaScript logic.
 
-Create a growth chart that tells you how fast a number will grow over time, given a growth rate.
+Here are some suggested components for the various components above:
 
-Input: initial number, growth rate
-Output: a chart or table that shows you how much the number has grown over time.
+### Input Area - Suggested Libraries
 
-### Or, do your own thing!
+* CodeMirror
+* Ace Editor
 
-You can create something cooler if you wish. Please don't copy/paste old projects, though -- write from scratch, even if you're inspired by the old project :-)
+### Compilation Logic
+
+* [Showdown](https://github.com/showdownjs/showdown)
+* [markdown-it](https://github.com/markdown-it/markdown-it)
+* [markedjs](https://github.com/markedjs/marked)
+
+### Preview Panel
+
+Well, for this one, you just output the compiled HTML to the DOM. :-)
+
+## Frameworks:
+
+It is completely possible to build this using jQuery. You can use React, Vue, Angular if you wish.
 
 ## Restrictions
 
-You must be able to deploy your project online.
-Your project must use JavaScript.
+* Your project must use JavaScript.
 
 There are no other restrictions.
-
-## Technology suggestions
-
-* Templated HTML
-* React
-* Vue
-* Angular
-* Pure Express API - see StackOverflow link in "Library Suggestions" below
-
-## Library suggestions
-
-Avoid D3.js unless you're already experienced at it. D3 is very powerful for custom graphs, but has an extremely steep learning curve, making it unsuitable for this project.
-
-Good libraries to use:
-* Google Charts - https://developers.google.com/chart
-* Plotly - https://plotly.com/javascript/plotly-fundamentals/
-* ChartJS - https://www.chartjs.org/
-* If you're using strictly backend, see https://stackoverflow.com/questions/44543729/how-to-render-a-graph-as-image-in-node. We have not tested any of these suggestions, but [Vega](https://www.npmjs.com/package/vega) looks great so far.
 
 ## Tips for success:
 
