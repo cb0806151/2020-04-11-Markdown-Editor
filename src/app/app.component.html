@@ -2,7 +2,7 @@
   <label class='nav__theme-toggle' (click)="toggleTheme()">{{themes[currentTheme]}}</label>
 </div>
 <div class='container {{themeClasses[currentTheme]}}'>
-  <div class='editor'>
+  <div class='editor {{themeClasses[currentTheme]}}'>
     <div class='editor__save-button' (click)="copyMarkdownToClipboard()">copy to clipboard</div>
     <textarea class='editor__field {{themeClasses[currentTheme]}}' [(ngModel)]="textToBeMarkedDown"></textarea>
   </div>

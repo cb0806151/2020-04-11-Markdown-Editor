@@ -8,12 +8,12 @@
     justify-content: flex-start;
     align-items: center;
     border-bottom: 1px solid white;
-    &.light {
-        border-bottom: 1px solid black;
-    }
     .nav__theme-toggle {
         padding: 10px;
         font-weight: 100;
+    }
+    &.light {
+        border-bottom: 1px solid black;
     }
 }
 .container {
@@ -53,12 +53,19 @@
             border: 0px;
             width: calc(100% - 40px);
             height: calc(100% - 40px);
+            &:focus {
+                outline: none;
+            }
         }
     }
     .display {
-        overflow-y: scroll;
+        overflow-y: auto;
+        border-bottom: 1px solid white;
         .display__field {
             padding: 20px;
+        }
+        &.light {
+            border-bottom: 1px solid black;
         }
     }
 }
